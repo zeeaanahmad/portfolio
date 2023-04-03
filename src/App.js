@@ -8,7 +8,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Project from './pages/Project';
 import Contact from './pages/Contact';
-
+import BlogList from './pages/Blog'
+import BlogTemplate from './components/Blogs/Blogtemplate';
 function App() {
   const [load, upadateLoad] = useState(true);
   const [mousePosition, setMousePosition] = useState({
@@ -61,7 +62,10 @@ function App() {
             <Route path='/' element={<Home />}></Route>
             <Route path='/about' element={<About />}></Route>
             <Route path='/project' element={<Project />}></Route>
+            <Route path='/blogs' element={<BlogList />}></Route>
             <Route path='/contact' element={<Contact />}></Route>
+            <Route path='/blog/how-to-use-jspdf' element={<BlogTemplate />}></Route>
+            
           </Routes>
         </div>
       </Router>

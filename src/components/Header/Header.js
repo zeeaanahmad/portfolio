@@ -67,6 +67,15 @@ function Header() {
               Projects
             </Nav.Link>
           </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              as={Link}
+              to="/blogs"
+              onClick={() => updateExpanded(false)}
+            >
+              Blog
+            </Nav.Link>
+          </Nav.Item>
 
           <Nav.Item>
             <Nav.Link
